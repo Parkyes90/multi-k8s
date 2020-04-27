@@ -10,5 +10,5 @@ docker push parkyes90/multi-server:"$SHA"
 docker push parkyes90/multi-worker:"$SHA"
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=parkyes90/multi-server:"$SHA"
-kubectl set image deployments/client-deployment server=parkyes90/multi-client:"$SHA"
-kubectl set image deployments/worker-deployment server=parkyes90/multi-worker:"$SHA"
+kubectl set image deployments/client-deployment client=parkyes90/multi-client:"$SHA"
+kubectl set image deployments/worker-deployment worker=parkyes90/multi-worker:"$SHA"
