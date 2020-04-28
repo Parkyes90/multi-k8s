@@ -118,3 +118,6 @@ dist
 
 # Jetbrains
 .idea
+
+# auth
+service-account.json
